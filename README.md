@@ -2,6 +2,7 @@
 This is my recreation of Langton's Ant in Pygame. 
 
 ## Preview
+![langtons_ant_preview](https://github.com/user-attachments/assets/a30ec00c-ec99-4e98-855f-dec2fb59e728)
 
 ## Background
 The ant moves in a grid and changes its direction based on the tile's color. The full description of the algorithm is linked here: https://en.wikipedia.org/wiki/Langton%27s_ant.
