@@ -1,4 +1,4 @@
-# My Langton's Ant Python (pygame)
+# My Langton's Ant (pygame)
 This is my recreation of Langton's Ant in Pygame. 
 
 ## Preview
