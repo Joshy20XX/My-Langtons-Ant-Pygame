@@ -12,9 +12,11 @@ For my version, it was written in Pygame (which is a game engine framework for P
 I didn't want to post a version of this here until it was made well enough for you to see the whole simulation. There's still room for improvement but it works good.
 
 ## Other details
-Built with pygame 2.5.2 with Python 3.12.1 and SDL 2.28.3.
-This wasn't vibe-coded! I spent lots of time coding this by hand and fixed bugs the best I could for right now. I did it as a challenge for my current coding skills.
-Build date planned: April 20th, 2025 @ 4:08PM EST and updated: August 22, 2025 @ 1:26AM EST
+• Built with pygame 2.5.2 with Python 3.12.1 and SDL 2.28.3.
+
+• This wasn't vibe-coded! I spent lots of time coding this by hand and fixed bugs the best I could for right now. I did it as a challenge for my current coding skills.
+
+• Build date planned: April 20th, 2025 @ 4:08PM EST and updated: August 22, 2025 @ 1:26AM EST
 
 ## Try it out!
 As long as you have pygame installed (and Python of course), you can launch the main.py script to see it in action! If you don't have any of those, it's not that hard to download. Just Google pygame, go to their website, and then follow the instructions. :)
