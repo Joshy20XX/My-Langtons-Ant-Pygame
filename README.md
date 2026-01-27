@@ -30,7 +30,7 @@ pygame-ce==2.5.6
 ### Cloning (assuming you have git installed and ready)
 • Copy the clone link from the _Code_ button menu.
 
-• Then, open your terminal on your operating systems and use:
+• Then, open your terminal on your operating system and use:
 ```
 git clone <clone-url>
 ```
