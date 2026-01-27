@@ -23,4 +23,5 @@ __EDIT (1/27/2026): I reworked parts of the code to remove some redundancies and
 ## Try it out!
 As long as you have pygame installed (and Python of course), you can launch the main.py script to see it in action! If you don't have any of those, it's not that hard to download. Just Google pygame, go to their website, and then follow the instructions. :)
 
-__AS MENTIONED ABOVE, AS OF THE LATEST PYTHON VERSION, THE MAIN PYGAME BRANCH DOES NOT WORK.__ YOU MUST _"pip install pygame-ce"_ to run this after you clone since that branch adds more modern features over the original. The main pygame branch should be updated soon.
+__AS MENTIONED ABOVE, AS OF THE LATEST PYTHON VERSION, THE MAIN PYGAME BRANCH DOES NOT WORK.__ YOU MUST _"pip install pygame-ce"_ to run this after you clone since that branch is only working branch for it right now. If you're using an earlier version, you should be fine. It adds more modern features over the original. The main pygame branch should be updated soon.
+If you have any issues or suggestions for me, open up a ticket in the ___Issues___ above and we can further discuss it. :)
