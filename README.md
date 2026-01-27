@@ -10,6 +10,7 @@ https://en.wikipedia.org/wiki/Langton%27s_ant.
 
 For my version, it was written in Pygame (which is a game engine framework for Python). I could've made this on the GPU and did the movements per-pixel but a tile map was easier to work with. 
 I didn't want to post a version of this here until it was made well enough for you to see the whole simulation. There's still room for improvement but it works good.
+
 __EDIT (1/27/2026): I reworked parts of the code to remove some redundancies and make the simulation faster! It should scale with the window more properly too. :)__
 
 ## Other details
