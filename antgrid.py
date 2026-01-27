@@ -26,32 +26,20 @@ class Grid:
                 gridtile = 0 
                 tile_row.append(gridtile)
             self.antgrid.append(tile_row)
-
-        #Draw grid (number of tiles across and rows down (x,y) for vertical tile drawing. Runtime: O(n x m))
+        
+        
+    def draw_grid(self):
+        #Draw grid (number of tiles across and rows down (+x, +y).
         for i in range(self.n_tiles):
             for j in range(self.n_rows):
                 
                 tile_rect = pygame.Rect(i * (self.tile_x + self.padding), j * (self.tile_y + self.padding),self.tile_x,self.tile_y)
-                pygame.draw.rect(screen, (255,255,255), tile_rect)
                         
                 if self.antgrid[i][j] == 1:
                     pygame.draw.rect(screen, (0,0,0), tile_rect)
-
-    def change_grid(self, ant):
-        for i in range(self.n_tiles):
-            for j in range(self.n_rows):
-                tile_rect = pygame.Rect((self.tile_x + self.padding) * i, (self.tile_y + self.padding) * j,self.tile_x,self.tile_y)
-                
-                if ant.colliderect(tile_rect) and self.antgrid[i][j] == 0:
-                    self.antgrid[i][j] = 1
-                    if self.antgrid[i][j] == 1:
-                        pygame.draw.rect(screen, (0,0,0), tile_rect)
-
-                elif ant.colliderect(tile_rect) and self.antgrid[i][j] == 1:
-                    self.antgrid[i][j] = 0
-                    if self.antgrid[i][j] == 0:
-                        pygame.draw.rect(screen, (255,255,255), tile_rect)
-                        
+                elif self.antgrid[i][j] == 0:
+                    pygame.draw.rect(screen, (255,255,255), tile_rect)
+          
 
     
                 
