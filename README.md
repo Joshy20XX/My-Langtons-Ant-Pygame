@@ -32,7 +32,7 @@ pip install pygame-ce
 
 ### Dependencies
 ```
-pygame-ce==2.5.6
+pygame-ce
 ```
 ### Cloning (assuming you have git installed and ready)
 • Copy the clone link from the _Code_ button menu.
