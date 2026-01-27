@@ -21,7 +21,14 @@ __EDIT (1/27/2026): I reworked parts of the code to remove some redundancies and
 • Build date planned: April 20th, 2025 @ 4:08PM EST and updated: Jaunary 27, 2026 @ 1:26AM EST
 
 ## Try it out!
-As long as you have pygame installed (and Python of course), you can launch the main.py script to see it in action! If you don't have any of those, it's not that hard to download.
+As long as you have pygame or pygame-ce installed (and Python of course), you can launch the main.py script to see it in action! If you don't have any of those, it's not that hard to download.
+
+Open your terminal in your operating system and use: 
+```
+pip install pygame
+OR
+pip install pygame-ce
+```
 
 ### Dependencies
 ```
