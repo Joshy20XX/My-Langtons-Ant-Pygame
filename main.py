@@ -13,11 +13,11 @@ def main():
     pygame.init()
 
     #Play with these parameters
-    tile_size = 10 #in pixels
-    n_rows = 60 #The number of tiled rows down (+y axis)
-    n_tiles = 80 #The number of tiles across (+x axis)
+    tile_size = 6 #in pixels
+    n_rows = 85 #The number of tiled rows down (+y axis)
+    n_tiles = 120 #The number of tiles across (+x axis)
     slowness = 1 #How fast it goes. Smaller value is faster while larger value is slower.
-    ant_x = 30 #Ant's position X in the tile map array
+    ant_x = 70 #Ant's position X in the tile map array
     ant_y = 30 #Ant's position Y in the tile map array
     clock = pygame.time.Clock()
     run = True
@@ -32,7 +32,7 @@ def main():
 
     grid_padding = 0 #Set how far apart grid tiles are. Default = 0 (no spacing)
 
-    #A not so great fix for padding issue but it'll do for now
+    #A fix for padding issue. if no padding, just stretch the game window to fit the tile map properly and avoid the dark spaces
     if grid_padding > 0:
         s_width = (tile_size + 1) * n_tiles
         s_height = (tile_size + 1) * n_rows
@@ -42,7 +42,7 @@ def main():
         s_height = (tile_size) * n_rows
         screen = pygame.display.set_mode((s_width, s_height))
 
-    direction = 1 #0: ant's right, 1: ant's up, 2: ant's down, 3: ant's left
+    direction = 0 #0: ant's right, 1: ant's up, 2: ant's down, 3: ant's left
     antgrid1 = Grid(tile_size, tile_size, n_rows, n_tiles, grid_padding, color)
     antgrid1.make_grid()
 
