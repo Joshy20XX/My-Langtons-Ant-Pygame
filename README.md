@@ -2,7 +2,7 @@
 This is my recreation of Langton's Ant in Pygame. 
 
 ## Preview
-![langtons_ant_preview](https://github.com/user-attachments/assets/a30ec00c-ec99-4e98-855f-dec2fb59e728)
+![new_langtons_ant_preview](https://github.com/user-attachments/assets/a6a6a672-f05f-4902-9b95-2824c3c7fc94)
 
 ## Background
 The ant moves in a grid and changes its direction based on the tile's color. The tile changes it color after the ant makes its move. The full description of the algorithm is linked here: 
@@ -25,7 +25,7 @@ As long as you have pygame or pygame-ce installed (and Python of course), you ca
 
 Open your terminal in your operating system and use: 
 ```
-pip install pygame
+pip install pygame <- (only if you're on the older version of python or pygame)
 OR
 pip install pygame-ce
 ```
