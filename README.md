@@ -25,10 +25,9 @@ As long as you have pygame or pygame-ce installed (and Python of course), you ca
 
 Open your terminal in your operating system and use: 
 ```
-pip install pygame <- (only if you're on the older version of python or pygame)
-OR
 pip install pygame-ce
 ```
+It will have to do for now until the main pygame branch is updated.
 
 ### Dependencies
 ```
