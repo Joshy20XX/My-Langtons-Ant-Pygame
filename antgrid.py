@@ -19,10 +19,10 @@ class Grid:
 
     def make_grid(self):
         # Assemble the grid with the given properties       
-        for i in range(self.n_tiles):
+        for j in range(self.n_rows):
             tile_row = []
 
-            for j in range(self.n_rows):
+            for i in range(self.n_tiles):
                 gridtile = 0 
                 tile_row.append(gridtile)
             self.antgrid.append(tile_row)
@@ -30,14 +30,14 @@ class Grid:
         
     def draw_grid(self):
         #Draw grid (number of tiles across and rows down (+x, +y).
-        for i in range(self.n_tiles):
-            for j in range(self.n_rows):
+        for y in range(self.n_rows):
+            for x in range(self.n_tiles):
                 
-                tile_rect = pygame.Rect(i * (self.tile_x + self.padding), j * (self.tile_y + self.padding),self.tile_x,self.tile_y)
+                tile_rect = pygame.Rect(x * (self.tile_x + self.padding), y * (self.tile_y + self.padding),self.tile_x,self.tile_y)
                         
-                if self.antgrid[i][j] == 1:
+                if self.antgrid[y][x] == 1:
                     pygame.draw.rect(screen, (0,0,0), tile_rect)
-                elif self.antgrid[i][j] == 0:
+                elif self.antgrid[y][x] == 0:
                     pygame.draw.rect(screen, (255,255,255), tile_rect)
           
 

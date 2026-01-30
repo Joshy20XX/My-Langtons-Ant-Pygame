@@ -17,11 +17,11 @@ def main():
     n_rows = 85 #The number of tiled rows down (+y axis)
     n_tiles = 120 #The number of tiles across (+x axis)
     slowness = 1 #How fast it goes. Smaller value is faster while larger value is slower.
-    ant_x = 70 #Ant's position X in the tile map array
-    ant_y = 30 #Ant's position Y in the tile map array
+    ant_x = 50 #Ant's position X in the tile map array
+    ant_y = 40 #Ant's position Y in the tile map array
+    caption = pygame.display.set_caption("Langton's Ant")
     clock = pygame.time.Clock()
     run = True
-    caption = pygame.display.set_caption("Langton's Ant")
     ant_icon = pygame.image.load("langtonsant_screenshot_for_icon.png")
     pygame.display.set_icon(ant_icon)
     framecount = 0
@@ -53,16 +53,16 @@ def main():
 
         screen.fill('black')
         framecount += 1
-        ant = antgrid1.antgrid[ant_x][ant_y] #Actually define our ant for the movement check below
+        ant = antgrid1.antgrid[ant_y][ant_x] #Actually define our ant for the movement check below
 
         #Add and subtract our direction total based on if the tile index is 0 or 1
         if framecount % slowness == 0:
             if ant == 0:
-                antgrid1.antgrid[ant_x][ant_y] = 1
+                antgrid1.antgrid[ant_y][ant_x] = 1
                 direction += 1
 
             if ant == 1:
-                antgrid1.antgrid[ant_x][ant_y] = 0
+                antgrid1.antgrid[ant_y][ant_x] = 0
                 direction -= 1
 
             #Move the ant based on its direction
@@ -82,6 +82,7 @@ def main():
             elif direction < 0:
                 direction = 3
                 ant_x -= 1
+            
 
         antgrid1.draw_grid() #Draw the current state of the tilemap
         #print(f"Ant X: {ant_x}, Ant Y: {ant_y}, Direction {direction}") #Uncomment to see debugging
