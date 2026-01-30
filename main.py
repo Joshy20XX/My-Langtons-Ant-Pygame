@@ -1,11 +1,13 @@
 # Langton's Ant Test
 # Author: Joshua Ottey
 # Prototype Date: April 20, 2025 @ 4:08PM EST
-# Update: January 27, 2026 @ 12:23AM EST
+# Update: January 29, 2026 @ 10:14PM EST
 #################################################
 
 # UPDATE 1/27/2026: Colliderect checks are removed. The direction and color change within the tile map itself for a smoother simulation.
 # It feels faster and it no longer stutters. The grid padding has been reconfigured and the Ant class is removed for now.
+
+# UPDATE 1/29/2026: Changed tile draw routine to avoid confusion. Some comments were mislabeled. I fixed those too.
 import pygame
 from antgrid import Grid
 
@@ -42,7 +44,7 @@ def main():
         s_height = (tile_size) * n_rows
         screen = pygame.display.set_mode((s_width, s_height))
 
-    direction = 0 #0: ant's right, 1: ant's up, 2: ant's down, 3: ant's left
+    direction = 0 #0: ant's up, 1: ant's right, 2: ant's down, 3: ant's left
     antgrid1 = Grid(tile_size, tile_size, n_rows, n_tiles, grid_padding, color)
     antgrid1.make_grid()
 
