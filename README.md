@@ -18,7 +18,7 @@ __EDIT (1/27/2026): I reworked parts of the code to remove some redundancies and
 
 • This wasn't vibe-coded! I spent lots of time coding this by hand and fixed bugs the best I could for right now. I did it as a challenge for my current coding skills.
 
-• Build date planned: April 20th, 2025 @ 4:08PM EST and updated: Jaunary 27, 2026 @ 1:26AM EST
+• Build date planned: April 20th, 2025 @ 4:08PM EST and updated: Jaunary 29, 2026 @ 10:14PM EST
 
 ## Try it out!
 As long as you have pygame or pygame-ce installed (and Python of course), you can launch the main.py script to see it in action! If you don't have any of those, it's not that hard to download.
